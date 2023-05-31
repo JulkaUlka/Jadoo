@@ -1,0 +1,21 @@
+//utils styles
+@import './utils/mixin';
+@import './utils/variables';
+@import './utils/visually-hidden';
+
+//base styles
+@import './base/base';
+@import './base/reset';
+@import './base/container';
+@import './base/title';
+
+//components styles
+@import './components/header';
+@import './components/hero';
+@import './components/offers';
+@import './components/destinations';
+@import './components/next-trip';
+@import './components/testimonials';
+@import './components/companies';
+@import './components/subscribtion';
+@import './components/footer';
