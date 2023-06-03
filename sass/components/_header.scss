@@ -1,0 +1,112 @@
+.header {
+  @include mobile {
+    background-color: #fff1da;
+    height: 100vh;
+  }
+
+  &__wrapper {
+    @include grid;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 1em;
+  }
+  &__block {
+    @include grid;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  &__menu {
+    @include mobile {
+      display: none;
+    }
+    @include grid;
+    align-items: center;
+    gap: 30px;
+    justify-content: flex-start;
+  }
+  &__item {
+    font-family: "Open Sans",sans-serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 1.29;
+    color: $navColor;
+    @include transition(color, transform);
+
+    &:hover,
+    &:focus {
+      color: $accentColor;
+      transform: scale(1.2);
+    }
+  }
+  &__link {
+    color: inherit;
+  }
+  &__buttons {
+    @include grid;
+    align-items: center;
+    gap: 10px;
+    @include desktop {
+      gap: 30px;
+      justify-content: flex-end;
+    }
+  }
+  &__link_sub {
+    @include mobile {
+      display: none;
+    }
+    &_active {
+      border: 1px solid $navColor;
+      border-radius: 5px;
+      padding: 9px 21px;
+    }
+  }
+  &__btn {
+    background: transparent;
+    font-family: inherit;
+
+    @include grid;
+    align-items: center;
+    gap: 6px;
+  }
+  &__mob-menu {
+    background: transparent;
+    outline: none;
+    border: none;
+    @include desktop {
+      display: none;
+    }
+  }
+}
+.mob-menu {
+  @include mobile {
+    &__navigation {
+      @include grid;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 30px;
+      padding-top: 93px;
+    }
+    &__item {
+      font-size: 30px;
+      line-height: 1.5;
+      text-align: center;
+      letter-spacing: 0.2px;
+      color: #737373;
+      @include transition(color, transform);
+
+      &:hover,
+      &:focus {
+        color: $accentColor;
+        transform: scale(1.2);
+      }
+    }
+    &__link {
+      color: inherit;
+    }
+  }
+  @include desktop {
+    display: none;
+  }
+}

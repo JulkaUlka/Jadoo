@@ -5,13 +5,13 @@
 }
 
 @mixin mobile {
-  @media screen and (min-width: 480px) {
+  @media screen and (max-width: 767.8px) {
     @content;
   }
 }
 
-@mixin desctop {
-  @media screen and (min-width: 1200px) {
+@mixin desktop {
+  @media screen and (min-width: 768px) {
     @content;
   }
 }
@@ -19,7 +19,4 @@
 @mixin grid {
   display: flex;
   flex-wrap: wrap;
-  
 }
-
-

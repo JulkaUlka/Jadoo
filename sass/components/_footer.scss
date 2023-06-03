@@ -1,0 +1,109 @@
+.footer {
+  background-color: #fff1da;
+  padding-bottom: 20px;
+  @include desktop {
+    background-color: $bgColor;
+    padding-bottom: 79px;
+  }
+  &__container {
+    @include grid;
+    flex-direction: column;
+    align-items: start;
+    gap: 40px;
+    padding-top: 10px;
+    background-color: #fff1da;
+
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: start;
+      justify-content: space-between;
+      background-color: $bgColor;
+      padding-bottom: 79px;
+      padding-top: 90px;
+    }
+  }
+  &__title {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1.5;
+    color: #181e4b;
+  }
+  &__text {
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 1.25;
+    color: $mainColor;
+    width: 80%;
+  }
+  &__rights {
+    text-align: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.25;
+  }
+  &__nav {
+    @include grid;
+    flex-direction: column;
+    align-items: start;
+    justify-content: space-around;
+
+    @include desktop {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: center;
+      gap: 72px;
+    }
+  }
+  &__nav-item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.25;
+    &_first {
+      padding-bottom: 24px;
+    }
+  }
+  &__nav-list {
+    margin-bottom: 34px;
+    @include grid;
+    flex-direction: column;
+    gap: 12px;
+  }
+  &__nav-link {
+    color: inherit;
+
+    &_accent {
+      font-weight: 700;
+      font-size: 21px;
+      color: #080809;
+    }
+  }
+  &__media-block {
+    width: 100%;
+    margin-bottom: 41px;
+
+    @include desktop {
+      width: auto;
+    }
+  }
+  &__media-list {
+    @include grid;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+  }
+  &__media-text {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.25;
+    text-align: center;
+    margin: 26px 0 16px 0;
+  }
+  &__media-app {
+    @include grid;
+    align-items: center;
+    justify-content: center;
+    gap: 7px;
+  }
+}

@@ -1,0 +1,99 @@
+.subscription {
+  padding-bottom: 60px;
+  @include desktop {
+    background: url(../images/subscribtion/decore6.svg) no-repeat bottom right,
+      url(../images/subscribtion/decore4.svg) no-repeat 6% 79%,
+      url(../images/subscribtion/decore5.svg) no-repeat 95.8% 33%;
+  }
+  &__container {
+    @include desktop {
+      position: relative;
+    }
+  }
+  &__form-box {
+    position: relative;
+
+    @include desktop {
+      position: relative;
+      z-index: 1;
+      background-color: rgb(241 237 255 / 93%);
+      border-radius: 129px 20px 20px 20px;
+      padding: 79px 156px;
+
+      &::after {
+        content: url(../images/subscribtion/decore7.svg);
+        position: absolute;
+        top: -20px;
+        right: -23px;
+      }
+    }
+  }
+  &__title {
+    @include mobile {
+      display: none;
+    }
+    @include desktop {
+      display: block;
+      font-weight: 600;
+      font-size: 33px;
+      line-height: 1.64;
+      text-align: center;
+      color: $mainColor;
+    }
+  }
+  &__form {
+    margin-top: 74px;
+    @include grid;
+    align-items: center;
+    justify-content: center;
+    @include desktop {
+      gap: 38px;
+    }
+  }
+  &__input {
+    display: none;
+    @include desktop {
+      display: block;
+      height: 68px;
+      width: 421px;
+      background: $bgColor;
+      border-radius: 10px;
+      padding: 23px 28px;
+      outline: none;
+      border: none;
+
+      &::placeholder {
+        font-family: "Montserrat";
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.21;
+        color: #39425d;
+      }
+    }
+  }
+  &__btn {
+    padding: 17px 37px;
+    font-family: "Open Sans";
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.35;
+    text-align: center;
+    color: #ffffff;
+    background: linear-gradient(180deg, #ff946d 0%, #ff7d68 100%);
+    border-radius: 10px;
+    margin-left: 20px;
+
+    @include desktop {
+      padding: 22px 50px;
+      margin: 0;
+
+      &_mob {
+        display: none;
+      }
+    }
+    &_mob {
+      background: transparent;
+      padding: 0;
+    }
+  }
+}
