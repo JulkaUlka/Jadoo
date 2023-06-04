@@ -1253,7 +1253,7 @@ button {
     padding: 79px 156px;
   }
   .subscription__form-box::after {
-    content: url(../images/subscribtion/decore7.svg);
+    content: url(../images/subscribtion/decore7.png);
     position: absolute;
     top: -20px;
     right: -23px;
